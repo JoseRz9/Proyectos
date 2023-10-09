@@ -10,12 +10,36 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            
+            Text("Hola, Jose!")
+                .font(.largeTitle)
+                .foregroundColor(.blue)
+                .multilineTextAlignment(.leading)
+            
+            Text("25-0591-2017")
+                .font(.title3)
+                .foregroundColor(.orange)
+                .multilineTextAlignment(.leading)
+            
+            Text("Jose David Ramirez")
+                .font(.title2)
+                .foregroundColor(.red)
+                .multilineTextAlignment(.leading)
+            
+            HStack{
+                Text("1-Uno")
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.blue)
+                Text("2-Dos")
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.blue)
+                Text("3-Tres")
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.blue)
+            }
         }
         .padding()
+        
     }
 }
 
